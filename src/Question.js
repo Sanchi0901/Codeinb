@@ -23,7 +23,6 @@ function Question({ question, onAnswer, answer }) {
         </div>
       )}
 
-       {/* Handle 1-10 rating question */}
        {question.type === 'rating' && question.max === 10 && (
         <div className="rating-circles rating-10">
           {[...Array(10).keys()].map(num => (
