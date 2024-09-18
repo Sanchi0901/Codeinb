@@ -1,6 +1,6 @@
 import React from 'react';
 import Question from './Question';
-import './index.css'; // Ensure your CSS is imported
+import './index.css'; 
 
 function Survey({ question, onAnswer, onNext, onPrev, onSkip, currentQuestionIndex, totalQuestions, onComplete }) {
   const handleFinishSurvey = () => {
