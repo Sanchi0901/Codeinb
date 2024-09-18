@@ -1,13 +1,114 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-image:linear-gradient(to right,rgb(208, 163, 163), rgb(238, 238, 185), rgb(205, 205, 239));
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin-top: 13%;
+  text-align: center;
+
 }
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.question {
+  margin: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.rating-circles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rating-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+}
+
+.rating-circle:hover {
+  background-color: #bdbdbd;
+}
+
+.rating-circle.active {
+  background-color: #4CAF50;
+  color: #df4b4b;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.thank-you-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+button {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border: navajowhite;
+  border-radius: 10px;
+  background-color: #0d6a34;
+  color: rgb(248, 246, 246);
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.rating-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: 2px solid #4CAF50;
+  background-color: #fff;
+  color: #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  margin:  15px; 
+}
+
+.rating-button:hover {
+  background-color: #4CAF50;
+  color: #dc7e7e;
+}
+
